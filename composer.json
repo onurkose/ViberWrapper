@@ -1,0 +1,28 @@
+{
+    "name": "onurkose/viber-wrapper",
+    "description": "Laravel wrapper for Bogdaan/viber-bot-php",
+    "type": "laravel",
+    "require": {
+        "bogdaan/viber-bot-php": "^0.0.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Onur Kose",
+            "email": "kose.onur@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "OnurKose\\ViberWrapper\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OnurKose\\ViberWrapper\\ViberWrapperServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
