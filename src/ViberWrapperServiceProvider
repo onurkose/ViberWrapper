@@ -1,0 +1,19 @@
+<?php
+
+namespace OnurKose\ViberWrapper;
+
+use Illuminate\Support\ServiceProvider;
+
+class ViberWrapperServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+    }
+
+    public function register()
+    {
+        $this->app->bind('viberwrapper', function () {
+            return new ViberWrapper();
+        });
+    }
+}
